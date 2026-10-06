@@ -16,7 +16,7 @@
   var stage=$('stage'), sctx=stage.getContext('2d');
   var inputs={main:$('cMain'),accent:$('cAccent'),outline:$('cOutline'),bg:$('cBg'),ring:$('cRing'),fill:$('cFill'),text:$('cText')};
   var loopEl=$('loop'), holdEl=$('hold'), holdOut=$('holdOut'), statusEl=$('status');
-  var state={mark:'front',preset:'grey',bg:'white',exit:'through',anim:'swim',
+  var state={mark:'angled',preset:'grey',bg:'white',exit:'through',anim:'swim',
     c:{main:NAVY,accent:RED,outline:WHITE,bg:WHITE,ring:NAVY,fill:GREY,text:NAVY}};
   var startedAt=0, raf=0, playing=false;
 

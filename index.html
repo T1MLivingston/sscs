@@ -338,8 +338,8 @@ footer p{margin:1.4rem 0 0}
       <div class="stack" id="marks" style="gap:10px">
         <div><span class="lab">Stingray</span>
           <div class="seg" role="group" aria-label="Stingray">
-            <button type="button" data-mark="front" aria-pressed="true">Front</button>
-            <button type="button" data-mark="angled" aria-pressed="false">Angled</button>
+            <button type="button" data-mark="front" aria-pressed="false">Front</button>
+            <button type="button" data-mark="angled" aria-pressed="true">Angled</button>
             <button type="button" data-mark="side" aria-pressed="false">Side</button>
           </div></div>
         <div><span class="lab">Seal</span>
@@ -380,6 +380,10 @@ footer p{margin:1.4rem 0 0}
           <button type="button" data-anim="slide" aria-pressed="false">Circle slides in</button>
           <button type="button" data-anim="zoom" aria-pressed="false">Circle zooms in</button>
         </div></div>
+      <label class="slider">
+        <span class="lab">Pause in the middle: <b id="holdOut">1.2</b> seconds</span>
+        <input type="range" id="hold" min="0.2" max="6" step="0.1" value="1.2">
+      </label>
       <div class="row">
         <button class="mbtn" id="play" type="button">Play</button>
         <button class="mbtn" id="random" type="button">Random GIF</button>
@@ -430,10 +434,6 @@ footer p{margin:1.4rem 0 0}
               <button type="button" data-exit="back" aria-pressed="false">Go back out</button>
             </div>
           </div>
-          <label class="slider">
-            <span class="lab">Pause on the logo: <b id="holdOut">1.2</b> seconds</span>
-            <input type="range" id="hold" min="0.4" max="4" step="0.1" value="1.2">
-          </label>
         </div>
       </div>
     </details>
