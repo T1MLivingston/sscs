@@ -373,8 +373,16 @@ footer p{margin:1.4rem 0 0}
 
     <div class="group stack">
       <h2 style="margin:0">Play and save</h2>
+      <div><span class="lab">Animation</span>
+        <div class="seg" id="anims" role="group" aria-label="Animation">
+          <button type="button" data-anim="swim" aria-pressed="true">Swim in</button>
+          <button type="button" data-anim="swing" aria-pressed="false">Swing up</button>
+          <button type="button" data-anim="slide" aria-pressed="false">Circle slides in</button>
+          <button type="button" data-anim="zoom" aria-pressed="false">Circle zooms in</button>
+        </div></div>
       <div class="row">
-        <button class="mbtn" id="play" type="button">Play swim-in</button>
+        <button class="mbtn" id="play" type="button">Play</button>
+        <button class="mbtn" id="random" type="button">Random GIF</button>
       </div>
       <div class="row">
         <button class="mbtn main" id="savePng" type="button">Save PNG</button>
@@ -413,13 +421,13 @@ footer p{margin:1.4rem 0 0}
           </div>
         </div>
         <div class="stack">
-          <h2 style="margin:0">Swim-in</h2>
+          <h2 style="margin:0">Motion</h2>
           <label class="check"><input type="checkbox" id="loop" checked> Loop</label>
           <div>
             <span class="lab">After the pause</span>
             <div class="seg" id="exits" role="group" aria-label="After the pause">
-              <button type="button" data-exit="back" aria-pressed="true">Go back out</button>
-              <button type="button" data-exit="through" aria-pressed="false">Swim on through</button>
+              <button type="button" data-exit="through" aria-pressed="true">Go on through</button>
+              <button type="button" data-exit="back" aria-pressed="false">Go back out</button>
             </div>
           </div>
           <label class="slider">

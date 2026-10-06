@@ -22,6 +22,9 @@ This repo is a static, single-page brand guide site. No framework, no build step
 - Color roles: `main` (wing), `accent` (belly), `outline`, `ring`, `fill`, `text`, plus `bg`.
 - `scheme(preset, bg, mark)` picks ring, fill, and lettering colors for a circle preset and background.
 - `draw(ctx, size, pose, colors, opts)` renders one frame to a canvas. PNG, the live preview, the preset thumbnails, and every GIF frame all go through it.
+- `pose(t, hold, mode, anim)` gives the motion at time `t` for one of the animations in `ANIMS` (swim, swing, slide, zoom). `timing(anim)` gives each one's in and out lengths.
+- `draw` paints the circle and lettering first and the stingray last, so the stingray covers the lettering as it moves. At rest this matches the artwork's stacking exactly.
+- The preview plays on load unless the viewer prefers reduced motion. "Random GIF" picks an animation, circle, background, and exit for the current logo.
 - `svgText()` builds the SVG export from the same layers.
 - `makeGif(size, onProgress)` is a small built-in GIF encoder (palette, LZW, frame diffing). No library.
 - Saving: on claude.ai it uses the `downloads` capability. Anywhere else it falls back to a normal browser download. Leave both paths in place.
